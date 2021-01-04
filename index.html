@@ -272,6 +272,20 @@
             duration: 800
         });
     </script>
+    
+    <!-- For hiding the sideNavigationBar automatically while clicking on the anchor tag -->
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("sidenav").style.right = "-350px";
+            } else {
+                document.getElementById("sidenav").style.right = "-350px";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+            </script>
 </body>
 
 </html>
