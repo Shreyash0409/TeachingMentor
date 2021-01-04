@@ -1,0 +1,356 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+/* Writing overflow-x : hidden on the body just to remove the horizontal scrollbar while using the AOS library  */
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Header section */
+#header{
+    height: 100vh;
+    background-image: url('../images/background.png');
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.logo{
+    margin-top: 30px;
+    width: 120px;
+}
+.header-text{
+    max-width: 350px;
+    margin-top: 85px;
+}
+
+h1{
+    font-size: 34px;
+}
+
+p{
+    font-size: 15px;
+    line-height: 18px;
+    color: #777;
+}
+.square{
+    height: 12px;
+    width: 12px;
+    background-color: #f67c92;
+    margin: 15px 0px;
+    display: inline-block;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #f67c92;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.btn:hover{
+    background-color: #f67c92;
+    color: white;
+    border-radius: 15px;
+}
+
+.line-1{
+    height: 15px;
+    width: 15px;
+    background-color: #f67c92;
+    display: inline-block;
+}
+.line-2{
+    height: 1px;
+    width: 85px;
+    background-color: #f67c92;
+    display: inline-block;
+}
+.line-3{
+    height: 1px;
+    width: 65px;
+    background-color: #f67c92;
+    display: inline-block;
+}
+
+.line{
+    line-height: 8px;
+}
+
+
+/* NavigationBar section */
+
+#sidenav{
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    right: -350px;
+    background-color: #f67c92;
+    transition: 1s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* MenuButton */
+#menuBtn{
+    width: 50px;
+    top: 35px;
+    right: 45px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* ----about---- */
+#about,#offer{
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-left-col{
+    flex-basis: 50%;
+}
+
+.about-left-col img{
+    width: 100%;
+}
+
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+.about-text{
+    max-width: 500px;
+    margin-right: 80px;
+    display: inline-block;
+}
+.about-text h2{
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-style: italic;
+}
+.about-text h3{
+    font-size: 20px;
+    font-style: italic;
+    color: #797979;
+}
+
+/* ----Features---- */
+#features{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.feature-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-col{
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.feature-col img{
+    width: 100px;
+}
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.feature-btn{
+    margin: 80px auto 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Courses section */
+
+#courses{
+    padding: 100px 0px;
+}
+
+.courses-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.courses-right-col{
+    flex-basis: 50%;
+}
+
+.courses-right-col img{
+    width: 100%;
+}
+
+.courses-left-col{
+    flex-basis: 50%;
+}
+.courses-text{
+    max-width: 450px;
+}
+.courses-text button{
+    margin: 30px 0px;
+}
+
+/*----Offer section----*/
+
+/* Offer section is as same as the about section so the padding, margin and all the things are similar to about section so just add the offer id to about id */
+
+#offer button{
+    margin: 30px 0px;
+}
+
+/*----Contact section----*/
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col, .contact-right-col{
+    flex-basis: 50%;
+}
+
+.contact-right-col img{
+    max-width: 100%;
+}
+
+form{
+    max-width: 350px;
+    margin: 30px 0px;
+}
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #fab3c4;
+}
+
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0px;
+}
+
+/* ----Footer section---- */
+
+#footer{
+    padding: 50px 0px 10px;
+}
+    
+hr{
+    width: 100%;
+    border: 0;
+    border: 1px solid #f67c92;
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left-col{
+    flex-basis: 50%;
+}
+.footer-right-col{
+    flex-basis: 35%;
+}
+.footer-link    {
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+.link-title h4{
+    color: #fab3c4;
+    margin-bottom: 20px;
+}
+.link-title small{
+    font-size: 13px;
+    color: #777;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-logo img{
+    width: 120px;
+}
+.footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.copyright-text, .footer-logo{
+    flex-basis: 40%;
+    font-weight: bold;
+    color: rgb(92, 91, 91);
+}
+
+/*----Social-Media Icons----*/
+.socialmedia-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.socialmedia-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}

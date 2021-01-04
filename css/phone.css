@@ -1,0 +1,221 @@
+/* for adding media query directly on the css file rather than adding it on the html use */
+/* @media only screen and (max-widht: 770px){} */
+
+
+
+/* Specially for Galaxy fold and iphone 5s screen size mobile phones*/
+@media (max-width:320px){
+
+    #header{
+        background-position: bottom;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+    .container{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .logo{
+        margin-top: 27px;
+        width: 70px;
+    }
+    .header-text{
+        margin-top: 35px;
+    }
+    h1{
+        font-size: 21px;
+    }
+    p{
+        font-size: 11px;
+    }
+    #menuBtn{
+        width: 25px;
+        right: 20px;
+        top: 46px;
+    }
+    .btn{
+        padding: 10px 16px;
+    }
+    .socialmedia-icons img{
+        width: 14px;
+        margin: 15px auto;
+    }
+    
+    /*----about section & offer section----*/
+    #about, #offer{
+        padding-top: 50px;
+    }
+    .about-left-col, .about-right-col{
+        flex-basis: 100%;
+    }
+    .about-text{
+        margin: 40px 35px 0px;
+    }
+    .about-text p{
+        font-size: 11px;
+    }
+    .about-text h2{
+        font-size: 18px;
+    }
+    .about-text h3{
+        font-size: 15px;
+    }
+    
+    /*---features section---*/
+    #features{
+        padding-top: 20px;
+    }
+    .feature-btn{
+        margin-top: 65px;
+    }
+    .feature-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /*---courses section---*/
+    #courses{
+        padding-top: 65px;
+    }
+    .courses-left-col{
+        flex-basis: 100%;
+    }
+    .courses-text p{
+        font-size: 11px;
+    }
+    .courses-right-col{
+        flex-basis: 100%;
+        margin-top: 70px;
+    }
+    
+    /*---contact section---*/
+    .contact-left-col{
+        flex-basis: 100%;
+    }
+    .contact-right-col{
+        flex-basis: 100%;
+        margin-top: 50px;
+    }
+    
+    /*---footer section---*/
+    
+    .footer-left-col, .footer-right-col{
+        flex-basis: 100%;
+    }
+    
+    .link-title{
+        margin-top: 20px;
+        flex-basis: 41%;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+
+
+/*---header section---*/
+@media (min-width:321px) and (max-width:770px){
+    #header{
+        background-position: bottom;
+        background-size: 102%;
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+    .container{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .logo{
+        margin-top: 27px;
+        width: 70px;
+    }
+    .header-text{
+        margin-top: 50px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    #menuBtn{
+        width: 35px;
+        right: 20px;
+        top: 44px;
+    }
+    .btn{
+        padding: 10px 16px;
+    }
+    .socialmedia-icons img{
+        width: 14px;
+        margin: 15px auto;
+    }
+
+    /*----about section & offer section----*/
+    #about, #offer{
+        padding-top: 50px;
+    }
+    .about-left-col, .about-right-col{
+        flex-basis: 100%;
+    }
+    .about-text{
+        margin: 40px 35px 0px;
+    }
+    .about-text p{
+        font-size: 11px;
+    }
+    .about-text h2{
+        font-size: 18px;
+    }
+    .about-text h3{
+        font-size: 15px;
+    }
+    
+    /*---features section---*/
+    #features{
+        padding-top: 20px;
+    }
+    .feature-btn{
+        margin-top: 65px;
+    }
+    .feature-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /*---courses section---*/
+    #courses{
+        padding-top: 65px;
+    }
+    .courses-left-col{
+        flex-basis: 100%;
+    }
+    .courses-text p{
+        font-size: 11px;
+    }
+    .courses-right-col{
+        flex-basis: 100%;
+        margin-top: 70px;
+    }
+    
+    /*---contact section---*/
+    .contact-left-col{
+        flex-basis: 100%;
+    }
+    .contact-right-col{
+        flex-basis: 100%;
+        margin-top: 50px;
+    }
+    
+    /*---footer section---*/
+    
+    .footer-left-col, .footer-right-col{
+        flex-basis: 100%;
+    }
+    
+    .link-title{
+        margin-top: 20px;
+        flex-basis: 41%;
+        margin-bottom: 30px;
+    }
+}
